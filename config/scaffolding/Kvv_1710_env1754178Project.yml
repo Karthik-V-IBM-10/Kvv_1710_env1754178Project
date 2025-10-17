@@ -7,6 +7,24 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+- name: TPP_services_in_FCS
+  gitServerName: SIQA_kvv
+  gitUrl: https://github.com/Karthik-V-IBM-10
+  gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+services:
+- serviceName: project.kvv_1710_env1754178.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:DBInsert
+  packages:
+  - name: Kvv_1710_env1754178Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: project.kvv_1710_env1754178.integrations:SIQAAdapterFlow
+  packages:
+  - name: Kvv_1710_env1754178Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
